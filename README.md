@@ -30,7 +30,8 @@ All formal runs used Hugging Face `cpu-upgrade` (8 allocated vCPUs), one
 Python process, and no GPU. Python reported 64 host logical CPUs visible inside
 the container; that visibility is not the allocation. See the
 [illustrated technical report](reports/exact-claims/report.md) and
-the [self-contained marimo tutorial](notebooks/statistical_provability_reproduction.py).
+the [final release record](reports/final-release/report.md), plus the
+[self-contained marimo tutorial](notebooks/statistical_provability_reproduction.py).
 
 ## Experiment log
 
