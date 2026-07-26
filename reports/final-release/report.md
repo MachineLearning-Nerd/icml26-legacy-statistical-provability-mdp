@@ -30,7 +30,7 @@ Claims 5–6 remain preserved as **Historical rejected baseline**.
 - Published existing Space: `DineshAI/hAQZl57Nvx`
 - Published Space revision:
   `54205ae698e82f5b7ff82ec9b493535d1580df37`
-- GitHub `main` publication SHA:
+- Initial GitHub `main` content-publication SHA:
   `bc1651ad02527adcbe04444182b029165c301868`
 
 The upload used the Hugging Face commit API and only the 109 UTF-8 files in
