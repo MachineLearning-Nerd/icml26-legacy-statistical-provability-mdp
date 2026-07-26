@@ -1,0 +1,22 @@
+{
+  "case": "theorem4_universal_proof_certificate",
+  "proof_kernel": {
+    "one_step_farkas_certificate": true,
+    "bellman_recurrence_certificate": true,
+    "finite_horizon_induction_schema": true,
+    "semantic_rules": {
+      "probability_integration_is_monotone": true,
+      "bellman_regret_decomposition": true,
+      "natural_number_induction": true,
+      "optimal_value_dominates_fixed_policy": true
+    }
+  },
+  "tight_witness": {
+    "uniform_error": "1/4",
+    "regret": "1/2",
+    "bound": "1/2",
+    "factor_two_attained": true
+  },
+  "verified": true,
+  "verdict": "VERIFIED"
+}

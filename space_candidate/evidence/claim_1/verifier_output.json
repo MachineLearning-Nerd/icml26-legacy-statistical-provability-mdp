@@ -1,0 +1,17 @@
+{
+  "case": "theorem1_compactness_proof_certificate",
+  "assumptions_exact": true,
+  "dependency_nodes": 11,
+  "dependency_graph_acyclic": true,
+  "exact_rule_conclusions": true,
+  "root_conclusion_valid": true,
+  "proof_obligations": {
+    "metric": true,
+    "weak_bl_equivalence": true,
+    "weak_sequential_compactness": true,
+    "limit_stays_in_class": true,
+    "metric_compactness": true
+  },
+  "verified": true,
+  "verdict": "VERIFIED"
+}

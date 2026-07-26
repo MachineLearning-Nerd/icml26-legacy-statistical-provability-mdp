@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "title": "Why Agentic Theorem Prover Works — exact reproduction",
+  "emoji": "🎯",
+  "space_id": "DineshAI/hAQZl57Nvx",
+  "paper": "arXiv:2602.10538v1",
+  "tags": [
+    "icml2026-repro",
+    "paper-hAQZl57Nvx"
+  ],
+  "updated_at": "2026-07-26T00:00:00+00:00",
+  "root": {
+    "slug": "current-verification",
+    "title": "Current exact verification",
+    "file": "pages/current-verification/page.md",
+    "children": [
+      {
+        "slug": "current-claim-1",
+        "title": "Claim 1 — VERIFIED",
+        "file": "pages/current-claim-1/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-2",
+        "title": "Claim 2 — VERIFIED",
+        "file": "pages/current-claim-2/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-3",
+        "title": "Claim 3 — VERIFIED",
+        "file": "pages/current-claim-3/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-4",
+        "title": "Claim 4 — VERIFIED",
+        "file": "pages/current-claim-4/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-5",
+        "title": "Claim 5 — FALSIFIED",
+        "file": "pages/current-claim-5/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-6",
+        "title": "Claim 6 — FALSIFIED",
+        "file": "pages/current-claim-6/page.md",
+        "children": []
+      },
+      {
+        "slug": "visibility-matrix",
+        "title": "Evaluator visibility matrix",
+        "file": "pages/visibility-matrix/page.md",
+        "children": []
+      },
+      {
+        "slug": "release-report",
+        "title": "Release report and forecast",
+        "file": "pages/release-report/page.md",
+        "children": []
+      },
+      {
+        "slug": "historical-rejected-baseline",
+        "title": "Historical rejected baseline",
+        "file": "pages/historical-rejected-baseline/page.md",
+        "children": [
+          {
+            "slug": "historical-index",
+            "title": "Original index",
+            "file": "pages/index.md",
+            "children": []
+          },
+          {
+            "slug": "historical-overview",
+            "title": "Original overview",
+            "file": "pages/overview/page.md",
+            "children": []
+          },
+          {
+            "slug": "historical-claims",
+            "title": "Original claims",
+            "file": "pages/claims/page.md",
+            "children": []
+          },
+          {
+            "slug": "historical-evidence",
+            "title": "Original evidence",
+            "file": "pages/evidence/page.md",
+            "children": []
+          },
+          {
+            "slug": "historical-verification-run",
+            "title": "Original verification run",
+            "file": "pages/verification-run/page.md",
+            "children": []
+          },
+          {
+            "slug": "historical-conclusion",
+            "title": "Original conclusion",
+            "file": "pages/conclusion/page.md",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "agent_view_tokens": 8000,
+  "revision": "release-candidate"
+}

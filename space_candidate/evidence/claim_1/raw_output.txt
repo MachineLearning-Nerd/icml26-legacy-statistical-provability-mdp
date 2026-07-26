@@ -1,0 +1,41 @@
+PRIMARY VERIFIER
+{
+  "case": "theorem1_compactness_proof_certificate",
+  "assumptions_exact": true,
+  "dependency_nodes": 11,
+  "dependency_graph_acyclic": true,
+  "exact_rule_conclusions": true,
+  "root_conclusion_valid": true,
+  "proof_obligations": {
+    "metric": true,
+    "weak_bl_equivalence": true,
+    "weak_sequential_compactness": true,
+    "limit_stays_in_class": true,
+    "metric_compactness": true
+  },
+  "verified": true,
+  "verdict": "VERIFIED"
+}
+
+INDEPENDENT CHECKER
+{
+  "engine": "z3",
+  "violating_integral_triangle_assignment": "unsat",
+  "weak_to_BL_uniform_subsequence_contradiction": "unsat",
+  "noncompact_delta_pair_separation_witness": "sat",
+  "dependency_obligations_cross_checked": 11,
+  "passed": true
+}
+
+NEGATIVE CONTROL
+{
+  "case": "noncompact_discrete_domain_delta_sequence",
+  "domain_compact": false,
+  "all_measures_have_mass_one": true,
+  "BL_unit_test_witness": true,
+  "pairwise_d_BL_at_least_one": true,
+  "cauchy_subsequence_exists": false,
+  "failed_for_intended_reason": true,
+  "verified": false,
+  "verdict": "NEGATIVE_CONTROL_REJECTED"
+}

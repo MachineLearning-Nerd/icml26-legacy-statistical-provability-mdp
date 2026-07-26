@@ -1,0 +1,8 @@
+{
+  "engine": "z3",
+  "violating_super_solution_induction_step": "unsat",
+  "violating_sub_solution_induction_step": "unsat",
+  "bad_bound_without_upper_recurrence": "sat",
+  "same_bad_bound_with_upper_recurrence": "unsat",
+  "passed": true
+}

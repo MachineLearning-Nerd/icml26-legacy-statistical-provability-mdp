@@ -1,0 +1,10 @@
+{
+  "name": "noncompact_discrete_domain_delta_sequence",
+  "domain": "natural numbers with discrete metric",
+  "domain_compact": false,
+  "mass_bound": "1",
+  "sequence": "mu_n=delta_n",
+  "pairwise_test": "f_n(n)=1 and f_n(j)=0 for j!=n",
+  "pairwise_d_bl_lower_bound": "1",
+  "expected_failed_assumption": "K compact"
+}

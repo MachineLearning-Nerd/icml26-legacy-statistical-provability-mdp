@@ -1,0 +1,22 @@
+{
+  "claim": 3,
+  "paper_version": "arXiv:2602.10538v1",
+  "source_sha256": "bfb1bcbb7c9a5bb375c15b379917cb22d0b70127c05d9d9afbfc128ff829297f",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2602.10538#Thmtheorem3",
+  "definition_anchor": "https://ar5iv.labs.arxiv.org/html/2602.10538#Thmdefinition5",
+  "target_verdict": "VERIFIED",
+  "statement": "For every finite horizon, sequences satisfying the Bellman super-solution inequalities upper-bound V_b^*, sequences satisfying the sub-solution inequalities lower-bound V_b^*, and their endpoint difference is a provability-certificate gap.",
+  "quantifiers": {
+    "horizon": "every finite integer B >= 0",
+    "functions": "every [0,1]-valued sequence satisfying the respective base and Bellman inequalities",
+    "states": "every state x at every b <= B",
+    "mdp": "every reachability MDP for which the bounded Bellman operator is defined"
+  },
+  "proof_obligations": [
+    "The reachability Bellman operator is pointwise monotone.",
+    "The super-solution base and recurrence imply U_b >= V_b^* by induction.",
+    "The sub-solution base and recurrence imply L_b <= V_b^* by induction.",
+    "The endpoint inequalities imply the Definition 5 certificate and nonnegative gap."
+  ],
+  "verification_condition": "An exact proof kernel validates both induction certificates and the Bellman monotonicity dependency chain; an independent SMT checker proves the negations of both generic induction steps unsatisfiable; a recurrence-violation control exits nonzero."
+}

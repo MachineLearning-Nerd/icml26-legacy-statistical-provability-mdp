@@ -1,0 +1,7 @@
+{
+  "engine": "z3",
+  "primary_construction": "sat",
+  "counterexample_to_ratio_certificate": "unsat",
+  "coverage_restored_bad_erm": "unsat",
+  "passed": true
+}

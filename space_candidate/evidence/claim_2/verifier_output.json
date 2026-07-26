@@ -1,0 +1,18 @@
+{
+  "case": "theorem2_feller_policy_existence_proof",
+  "assumptions_exact": true,
+  "dependency_nodes": 12,
+  "dependency_graph_acyclic": true,
+  "exact_rule_conclusions": true,
+  "root_conclusion_valid": true,
+  "proof_obligations": {
+    "upper_semicontinuity_induction": true,
+    "compact_action_attainment": true,
+    "borel_argmax_graph": true,
+    "measurable_selector": true,
+    "policy_optimality": true
+  },
+  "continuous_kernel_calibration_only": true,
+  "verified": true,
+  "verdict": "VERIFIED"
+}

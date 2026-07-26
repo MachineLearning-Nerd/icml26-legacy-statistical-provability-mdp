@@ -1,0 +1,13 @@
+{
+  "name": "endpoint_coverage_restored",
+  "domain": "[0,1]",
+  "doubling_dimension": 1,
+  "covering_constant": 2,
+  "target": "identity",
+  "target_generator": "Y(z)=z deterministically",
+  "hypotheses": ["zero", "identity"],
+  "lipschitz_constant": 1,
+  "training_design": "one query at z=0 and one query at z=1",
+  "selected_erm": "identity",
+  "delta": "1/2"
+}

@@ -1,0 +1,21 @@
+{
+  "claim": 5,
+  "paper_version": "arXiv:2602.10538v1",
+  "source_sha256": "bfb1bcbb7c9a5bb375c15b379917cb22d0b70127c05d9d9afbfc128ff829297f",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2602.10538#Thmtheorem5",
+  "target_verdict": "FALSIFIED",
+  "statement": "If uniform score error Assumption 2 and the occupancy small-margin Assumption 3 hold, then a top-k policy has expected finite-horizon reachability regret bounded by C times the sum of epsilon_b^(beta+1), for a finite constant C depending only on the margin parameters.",
+  "quantifiers": {
+    "horizon": "every finite B",
+    "initial_distribution": "the theorem displays expectation for x0 distributed as Q",
+    "policy": "a top-k policy pi_{h,k}; the paper defines only its candidate set and does not impose a within-set selection rule",
+    "constant": "some finite C depending on C_delta and beta"
+  },
+  "assumptions": [
+    "The relevant state-action domain is compact.",
+    "The score error is uniformly at most epsilon_b on that domain.",
+    "The occupancy distribution obeys nu_b(Delta_b^(k) <= t) <= C_delta t^beta for all sufficiently small positive t.",
+    "The deployed action remains in the score-defined top-k candidate set."
+  ],
+  "falsification_condition": "All assumptions hold, epsilon_1 is zero, and a permitted top-2 policy has positive regret, while the claimed right-hand side is zero for every finite C."
+}

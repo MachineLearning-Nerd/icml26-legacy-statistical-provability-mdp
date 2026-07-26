@@ -1,0 +1,25 @@
+{
+  "claim": 2,
+  "paper_version": "arXiv:2602.10538v1",
+  "source_sha256": "bfb1bcbb7c9a5bb375c15b379917cb22d0b70127c05d9d9afbfc128ff829297f",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2602.10538#Thmtheorem2",
+  "assumption_anchor": "https://ar5iv.labs.arxiv.org/html/2602.10538#Thmassumption1",
+  "target_verdict": "VERIFIED",
+  "statement": "On compact metric state and action spaces, with a weakly continuous transition kernel and closed reachability goal, every finite Bellman stage is Borel measurable, each action supremum is attained, and an optimal deterministic Borel Markov policy exists.",
+  "quantifiers": {
+    "horizon": "every finite integer B",
+    "state_space": "X=M_<=W(K) for every compact metric K and finite W>0",
+    "action_space": "every compact metric A",
+    "kernel": "every Borel probability kernel satisfying the stated Feller condition",
+    "goal": "G={0}, or the displayed closed goal set"
+  },
+  "proof_obligations": [
+    "The closed-goal indicator is bounded upper semicontinuous.",
+    "Weak kernel continuity plus Portmanteau preserves upper semicontinuity of Q_b.",
+    "Compact-action maximization is attained and preserves upper semicontinuity.",
+    "The argmax correspondence has a Borel graph and nonempty compact sections.",
+    "A Borel measurable selector exists at every stage.",
+    "Finite-horizon dynamic programming with those selectors attains V_B^*."
+  ],
+  "verification_condition": "A complete acyclic dependency certificate covers upper-semicontinuity, attainment, Borel selection and policy optimality; an independent SMT route checks the implication algebra; a compact-action non-Feller kernel with an unattained supremum is rejected."
+}

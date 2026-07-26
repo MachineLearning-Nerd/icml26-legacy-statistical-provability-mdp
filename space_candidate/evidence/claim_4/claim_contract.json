@@ -1,0 +1,22 @@
+{
+  "claim": 4,
+  "paper_version": "arXiv:2602.10538v1",
+  "source_sha256": "bfb1bcbb7c9a5bb375c15b379917cb22d0b70127c05d9d9afbfc128ff829297f",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2602.10538#Thmtheorem4",
+  "target_verdict": "VERIFIED",
+  "statement": "Under uniform score error epsilon_b on every relevant state-action pair, the greedy finite-horizon reachability policy satisfies 0 <= V_B^*(x0)-V_B^pi(x0) <= 2 sum_{b=1}^B epsilon_b.",
+  "quantifiers": {
+    "horizon": "every finite integer B >= 0",
+    "initial_state": "every x0 whose relevant trajectories and actions lie in the audited domain",
+    "score_sequence": "every sequence satisfying the stagewise uniform error bounds",
+    "transition_kernel": "every probability kernel for which the Bellman quantities are defined"
+  },
+  "proof_obligations": [
+    "The greedy action's optimal Q-value loss is at most 2 epsilon_b.",
+    "Integration against a probability kernel preserves a pointwise continuation-regret upper bound.",
+    "The Bellman regret recursion is at most 2 epsilon_b plus the previous bound.",
+    "Natural-number induction yields the cumulative sum.",
+    "Optimality of V^* gives nonnegative regret."
+  ],
+  "verification_condition": "An exact proof kernel validates the one-step and induction certificates, an independent SMT reconstruction finds no violating real assignment, and a valid reachability MDP attains the factor 2 at B=1."
+}

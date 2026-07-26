@@ -1,0 +1,6 @@
+{
+  "engine": "z3",
+  "primary_model_with_suboptimal_top_k_selection": "sat",
+  "negative_control_with_optimal_selection": "unsat",
+  "passed": true
+}

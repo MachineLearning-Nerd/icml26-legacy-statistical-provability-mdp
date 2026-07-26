@@ -1,0 +1,8 @@
+{
+  "engine": "z3",
+  "violating_integral_triangle_assignment": "unsat",
+  "weak_to_BL_uniform_subsequence_contradiction": "unsat",
+  "noncompact_delta_pair_separation_witness": "sat",
+  "dependency_obligations_cross_checked": 11,
+  "passed": true
+}

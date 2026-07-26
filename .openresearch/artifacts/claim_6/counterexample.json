@@ -1,0 +1,14 @@
+{
+  "name": "concentrated_queries_without_coverage",
+  "domain": "[0,1]",
+  "doubling_dimension": 1,
+  "covering_constant": 2,
+  "target": "identity",
+  "target_generator": "Y(z)=z deterministically",
+  "hypotheses": ["zero", "identity"],
+  "lipschitz_constant": 1,
+  "training_design": "n copies of z=0 for every positive integer n",
+  "selected_erm": "zero",
+  "delta": "1/2",
+  "rate_subsequence": "n_m=2^m"
+}

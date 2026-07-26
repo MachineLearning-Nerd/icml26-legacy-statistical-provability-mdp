@@ -1,0 +1,28 @@
+{
+  "case": "concentrated_queries_without_coverage",
+  "assumptions": {
+    "compact_domain": true,
+    "doubling_dimension_one": true,
+    "hypotheses_map_to_unit_interval": true,
+    "uniform_lipschitz_constant_one": true,
+    "bounded_unbiased_targets_everywhere": true,
+    "valid_squared_loss_erm": true,
+    "lemma4_deviation_is_zero": true
+  },
+  "empirical_squared_risks": {
+    "zero": "0",
+    "identity": "0"
+  },
+  "selected_erm": "zero",
+  "approximation_error": "0",
+  "uniform_sup_error_for_every_n": "1",
+  "asymptotic_certificate": {
+    "subsequence": "n_m=2^m",
+    "rate_cube_upper_bound": "a_m=(m+1)/2^m",
+    "ratio": "(m+2)/(2m+2)<=3/4 for all integer m>=1",
+    "exact_reduction": "4(m+2)<=6(m+1) iff 0<=2m-2; slope=2>=0 and boundary value at m=1 is 0",
+    "rate_tends_to_zero": true
+  },
+  "contradiction": true,
+  "verdict": "FALSIFIED"
+}

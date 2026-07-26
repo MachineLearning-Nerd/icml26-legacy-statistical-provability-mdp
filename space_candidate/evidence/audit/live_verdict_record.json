@@ -1,0 +1,53 @@
+{
+  "dataset": "ICML-2026-agent-repro/verdicts",
+  "dataset_revision": "51252bdf2806668b3805d0c3f4ab806ffa39989d",
+  "dataset_file_sha256": "fcb85ed8a2236db8886011b5ff2b6a6dc248050bba9c9917891843c9f81c557a",
+  "selection": {
+    "field": "space_id",
+    "value": "DineshAI/hAQZl57Nvx",
+    "matching_records": 1
+  },
+  "record": {
+    "space_id": "DineshAI/hAQZl57Nvx",
+    "orid": "hAQZl57Nvx",
+    "paper_title": "Why Agentic Theorem Prover Works: A Statistical Provability Theory of Mathematical Reasoning Models",
+    "sha": "2989d916e16dce116af776d60d13246aa18eb73f",
+    "judged_at": "2026-07-25T19:51:04+00:00",
+    "model": "zai-org/GLM-5.2",
+    "claims": [
+      {
+        "claim": 1,
+        "verdict": "toy",
+        "evidence": "Twenty random six-state measures and bounded TV distances do not test compactness or the bounded-Lipschitz topology."
+      },
+      {
+        "claim": 2,
+        "verdict": "toy",
+        "evidence": "Backward induction on a six-state finite MDP does not instantiate the Feller continuity conditions."
+      },
+      {
+        "claim": 3,
+        "verdict": "toy",
+        "evidence": "Functions constructed around V* on the same six-state MDP are circular and small-scale."
+      },
+      {
+        "claim": 4,
+        "verdict": "toy",
+        "evidence": "Regret was constant and accepted using an extra +0.5 tolerance."
+      },
+      {
+        "claim": 5,
+        "verdict": "inconclusive",
+        "evidence": "The margin condition was not instantiated and the observed slope was zero."
+      },
+      {
+        "claim": 6,
+        "verdict": "inconclusive",
+        "evidence": "The script evaluated the displayed formula instead of empirical estimation error."
+      }
+    ],
+    "overall": "The numerical checks are toy or proxy checks and do not verify the six theoretical claims.",
+    "quality": "low",
+    "score": "4/12"
+  }
+}

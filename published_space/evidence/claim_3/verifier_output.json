@@ -1,0 +1,19 @@
+{
+  "case": "theorem3_universal_proof_certificate",
+  "proof_kernel": {
+    "bellman_monotonicity_dependency_chain": true,
+    "upper_induction_step_certificate": true,
+    "lower_induction_step_certificate": true,
+    "finite_horizon_induction_schema": true,
+    "definition_5_endpoint_rule": true
+  },
+  "calibration_only_not_proof": {
+    "lower": "1/2",
+    "exact_value": "2/3",
+    "upper": "3/4",
+    "gap": "1/4",
+    "nonvacuous": true
+  },
+  "verified": true,
+  "verdict": "VERIFIED"
+}

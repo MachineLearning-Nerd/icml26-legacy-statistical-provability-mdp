@@ -1,0 +1,32 @@
+{
+  "case": "optimal_within_top_k_control",
+  "assumptions": {
+    "finite_state_space_compact": true,
+    "finite_action_space_compact": true,
+    "horizon_one": true,
+    "initial_distribution_valid": true,
+    "all_transition_distributions_valid": true,
+    "uniform_error_bound": true,
+    "selected_action_in_top_k": true,
+    "positive_margin_parameters": true,
+    "margin_tail_for_all_small_t": true
+  },
+  "q_star": {
+    "a_opt": "1",
+    "a_bad": "0",
+    "a_bad_2": "0"
+  },
+  "uniform_error": "0",
+  "epsilon": "0",
+  "top_k": [
+    "a_opt",
+    "a_bad"
+  ],
+  "selected_action": "a_opt",
+  "k_plus_one_gap": "1",
+  "margin_tail_reason": "Delta=1 almost surely, so P(Delta<=t)=0 for every 0<t<1.",
+  "regret": "0",
+  "claimed_rhs_for_every_finite_C": "0",
+  "contradiction": false,
+  "verdict": "NO_COUNTEREXAMPLE"
+}

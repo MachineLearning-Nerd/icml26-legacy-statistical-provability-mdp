@@ -1,0 +1,21 @@
+{
+  "claim": 6,
+  "paper_version": "arXiv:2602.10538v1",
+  "source_sha256": "bfb1bcbb7c9a5bb375c15b379917cb22d0b70127c05d9d9afbfc128ff829297f",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2602.10538#Thmtheorem6",
+  "target_verdict": "FALSIFIED",
+  "statement": "On a compact doubling domain with a uniformly Lipschitz score class, bounded conditionally unbiased targets and squared-loss ERM imply a high-probability uniform approximation error equal to approximation error plus O(L_H^(d/(d+2)) (log(n/delta)/n)^(1/(d+2))).",
+  "quantifiers": {
+    "sample_size": "the asserted asymptotic rate must hold for all sufficiently large n",
+    "confidence": "with probability at least 1-delta",
+    "estimator": "an empirical squared-loss minimizer, or a method satisfying Lemma 4",
+    "constant": "a finite big-O constant independent of n"
+  },
+  "assumptions": [
+    "The relevant domain is compact and has finite doubling dimension.",
+    "Every hypothesis is uniformly Lipschitz and maps into [0,1].",
+    "Bounded conditionally unbiased targets are available for every domain point.",
+    "The chosen estimator is a valid empirical squared-loss minimizer."
+  ],
+  "falsification_condition": "A deterministic family satisfies every displayed assumption for every n, has zero approximation error, but a valid ERM has sup-norm error one while the claimed rate tends to zero."
+}

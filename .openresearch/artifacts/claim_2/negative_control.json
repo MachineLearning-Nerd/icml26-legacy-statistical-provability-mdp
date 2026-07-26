@@ -1,0 +1,12 @@
+{
+  "name": "compact_action_nonfeller_unattained_supremum",
+  "state_space": "M_<=1(singleton), isometric to [0,1]",
+  "action_space": "[0,1]",
+  "goal_set": "{0}",
+  "initial_state": "mass one",
+  "failure_state": "mass one",
+  "goal_probability": "p(a)=a for a<1 and p(1)=0",
+  "supremum": "1",
+  "maximizer_exists": false,
+  "violated_assumption": "Feller weak continuity"
+}

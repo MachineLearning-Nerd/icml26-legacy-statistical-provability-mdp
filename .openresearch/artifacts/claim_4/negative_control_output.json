@@ -1,0 +1,12 @@
+{
+  "case": "uniform_error_assumption_removed",
+  "uniform_error": "1",
+  "declared_epsilon": "0",
+  "uniform_score_assumption_holds": false,
+  "regret": "1/2",
+  "claimed_bound": "0",
+  "bound_violated": true,
+  "failed_for_intended_reason": true,
+  "verified": false,
+  "verdict": "NEGATIVE_CONTROL_REJECTED"
+}

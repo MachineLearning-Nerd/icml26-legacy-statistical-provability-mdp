@@ -1,0 +1,22 @@
+{
+  "name": "theorem1_compactness_proof_certificate",
+  "assumptions": {
+    "K": "arbitrary compact metric space",
+    "W": "arbitrary finite real W>0",
+    "measure_class": "finite positive Borel measures with mass <= W"
+  },
+  "nodes": [
+    {"id": "bl_ball_compact", "rule": "arzela_ascoli", "depends": [], "conclusion": "BL unit ball is compact in uniform norm"},
+    {"id": "lipschitz_dense", "rule": "stone_weierstrass_lipschitz_algebra", "depends": [], "conclusion": "bounded Lipschitz functions are uniformly dense in C(K)"},
+    {"id": "metric_separation", "rule": "riesz_uniqueness_after_dense_tests", "depends": ["lipschitz_dense"], "conclusion": "d_BL(mu,nu)=0 implies mu=nu"},
+    {"id": "metric_axioms", "rule": "symmetric_test_class_and_linearity", "depends": ["metric_separation"], "conclusion": "d_BL is a metric"},
+    {"id": "weak_implies_bl", "rule": "uniform_test_subsequence_contradiction", "depends": ["bl_ball_compact"], "conclusion": "weak convergence implies d_BL convergence"},
+    {"id": "bl_implies_weak", "rule": "density_and_uniform_mass_bound", "depends": ["lipschitz_dense"], "conclusion": "d_BL convergence implies weak convergence"},
+    {"id": "uniform_tightness", "rule": "compact_domain_is_common_compact_carrier", "depends": [], "conclusion": "the whole measure class is uniformly tight"},
+    {"id": "weak_subsequence", "rule": "prokhorov_for_uniformly_bounded_finite_measures", "depends": ["uniform_tightness"], "conclusion": "every sequence has a weakly convergent subsequence"},
+    {"id": "limit_closed", "rule": "positivity_and_constant_one_test", "depends": ["weak_subsequence"], "conclusion": "the weak limit is positive and has mass <= W"},
+    {"id": "bl_subsequence", "rule": "weak_bl_topology_equivalence", "depends": ["weak_subsequence", "limit_closed", "weak_implies_bl", "bl_implies_weak"], "conclusion": "every sequence has a d_BL-convergent subsequence in the class"},
+    {"id": "compact_metric_space", "rule": "metric_sequential_compactness_equivalence", "depends": ["metric_axioms", "bl_subsequence"], "conclusion": "the bounded-mass measure space is compact under d_BL"}
+  ],
+  "root": "compact_metric_space"
+}

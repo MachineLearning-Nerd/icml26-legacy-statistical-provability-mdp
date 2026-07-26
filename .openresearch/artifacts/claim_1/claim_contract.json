@@ -1,0 +1,22 @@
+{
+  "claim": 1,
+  "paper_version": "arXiv:2602.10538v1",
+  "source_sha256": "bfb1bcbb7c9a5bb375c15b379917cb22d0b70127c05d9d9afbfc128ff829297f",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2602.10538#Thmtheorem1",
+  "target_verdict": "VERIFIED",
+  "statement": "If K is a compact metric space and W>0, the finite positive Borel measures on K with total mass at most W form a compact metric space under the bounded-Lipschitz metric.",
+  "quantifiers": {
+    "space": "every compact metric space K",
+    "mass_bound": "every finite real W>0",
+    "measures": "all finite positive Borel measures mu with mu(K)<=W",
+    "compactness": "every sequence has a d_BL-convergent subsequence with limit in the same set"
+  },
+  "proof_obligations": [
+    "d_BL is a separating metric on the bounded-mass positive measures.",
+    "The d_BL topology equals weak convergence on this set.",
+    "The family is uniformly tight and weakly sequentially compact.",
+    "Every weak subsequential limit remains positive with mass at most W.",
+    "Metric sequential compactness implies compactness."
+  ],
+  "verification_condition": "A machine-checked dependency certificate covers every obligation, a complete symbolic derivation audits the classical theorem applications, an independent SMT checker validates the algebraic contradiction steps, and the noncompact-domain delta sequence is rejected."
+}

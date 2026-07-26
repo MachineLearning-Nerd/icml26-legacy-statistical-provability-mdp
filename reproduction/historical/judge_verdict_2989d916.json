@@ -1,0 +1,38 @@
+{
+  "space_id": "DineshAI/hAQZl57Nvx",
+  "sha": "2989d916e16dce116af776d60d13246aa18eb73f",
+  "judged_at": "2026-07-25T19:51:04+00:00",
+  "score": "4/12",
+  "claims": [
+    {
+      "claim": 1,
+      "verdict": "toy",
+      "reason": "Bounded TV distances on 20 random six-state measures do not test compactness or the bounded-Lipschitz topology."
+    },
+    {
+      "claim": 2,
+      "verdict": "toy",
+      "reason": "Finite backward induction does not instantiate the Feller continuity assumptions."
+    },
+    {
+      "claim": 3,
+      "verdict": "toy",
+      "reason": "Functions constructed around a solved six-state V* are a circular small-instance demonstration."
+    },
+    {
+      "claim": 4,
+      "verdict": "toy",
+      "reason": "Constant regret and a +0.5 tolerance do not test the exact bound."
+    },
+    {
+      "claim": 5,
+      "verdict": "inconclusive",
+      "reason": "The margin condition was not instantiated and regret was constant."
+    },
+    {
+      "claim": 6,
+      "verdict": "inconclusive",
+      "reason": "The script evaluated the claimed formula rather than empirical estimation error."
+    }
+  ]
+}

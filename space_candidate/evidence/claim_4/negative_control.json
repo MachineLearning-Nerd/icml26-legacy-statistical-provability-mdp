@@ -1,0 +1,10 @@
+{
+  "name": "uniform_error_assumption_removed",
+  "horizon": 1,
+  "epsilon": "0",
+  "actions": ["optimal", "greedy_bad"],
+  "goal_probabilities": {"optimal": "1/2", "greedy_bad": "0"},
+  "scores": {"optimal": "0", "greedy_bad": "1"},
+  "selected_action": "greedy_bad",
+  "expected_failed_assumption": "uniform_score_error"
+}

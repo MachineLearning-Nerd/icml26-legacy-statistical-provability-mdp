@@ -1,0 +1,11 @@
+{
+  "case": "noncompact_discrete_domain_delta_sequence",
+  "domain_compact": false,
+  "all_measures_have_mass_one": true,
+  "BL_unit_test_witness": true,
+  "pairwise_d_BL_at_least_one": true,
+  "cauchy_subsequence_exists": false,
+  "failed_for_intended_reason": true,
+  "verified": false,
+  "verdict": "NEGATIVE_CONTROL_REJECTED"
+}

@@ -1,0 +1,49 @@
+PRIMARY VERIFIER
+{
+  "case": "theorem2_feller_policy_existence_proof",
+  "assumptions_exact": true,
+  "dependency_nodes": 12,
+  "dependency_graph_acyclic": true,
+  "exact_rule_conclusions": true,
+  "root_conclusion_valid": true,
+  "proof_obligations": {
+    "upper_semicontinuity_induction": true,
+    "compact_action_attainment": true,
+    "borel_argmax_graph": true,
+    "measurable_selector": true,
+    "policy_optimality": true
+  },
+  "continuous_kernel_calibration_only": true,
+  "verified": true,
+  "verdict": "VERIFIED"
+}
+
+INDEPENDENT CHECKER
+{
+  "engine": "z3",
+  "violating_portmanteau_USC_implication": "unsat",
+  "violating_selected_bellman_equality": "unsat",
+  "maximizer_for_nonFeller_control": "unsat",
+  "maximizer_after_continuity_restored": "sat",
+  "near_supremum_sequence_witness": "sat",
+  "dependency_obligations_cross_checked": 12,
+  "passed": true
+}
+
+NEGATIVE CONTROL
+{
+  "case": "compact_action_nonfeller_unattained_supremum",
+  "other_assumptions": {
+    "state_compact": true,
+    "action_compact": true,
+    "goal_closed": true,
+    "valid_probability_kernel": true
+  },
+  "Feller_condition_holds": false,
+  "supremum": "1",
+  "maximizer_exists": false,
+  "maximizing_sequence": "a_n=1-1/n has p(a_n)->1",
+  "failed_for_intended_reason": true,
+  "verified": false,
+  "verdict": "NEGATIVE_CONTROL_REJECTED"
+}

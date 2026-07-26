@@ -1,0 +1,39 @@
+{
+  "name": "theorem4_universal_proof_certificate",
+  "coefficient_order": {
+    "one_step": ["q_opt", "q_greedy", "h_opt", "h_greedy", "epsilon"],
+    "recurrence": ["regret_b", "one_step_loss", "continuation_regret", "previous_bound", "epsilon_b"]
+  },
+  "one_step_certificate": {
+    "premises_lhs_le_zero": [
+      ["1", "0", "-1", "0", "-1"],
+      ["0", "0", "1", "-1", "0"],
+      ["0", "-1", "0", "1", "-1"]
+    ],
+    "nonnegative_multipliers": ["1", "1", "1"],
+    "conclusion_lhs_le_zero": ["1", "-1", "0", "0", "-2"]
+  },
+  "recurrence_certificate": {
+    "equality_lhs_eq_zero": ["1", "-1", "-1", "0", "0"],
+    "inequality_premises_lhs_le_zero": [
+      ["0", "1", "0", "0", "-2"],
+      ["0", "0", "1", "-1", "0"]
+    ],
+    "inequality_multipliers": ["1", "1"],
+    "equality_multiplier": "1",
+    "conclusion_lhs_le_zero": ["1", "0", "0", "-1", "-2"]
+  },
+  "induction_schema": {
+    "base": "R_0=0",
+    "step": "R_b<=R_(b-1)+2 epsilon_b",
+    "conclusion": "R_B<=2 sum_{b=1}^B epsilon_b"
+  },
+  "tight_reachability_witness": {
+    "horizon": 1,
+    "epsilon": "1/4",
+    "actions": ["optimal", "greedy_tie"],
+    "goal_probabilities": {"optimal": "1/2", "greedy_tie": "0"},
+    "scores": {"optimal": "1/4", "greedy_tie": "1/4"},
+    "tie_break_selected": "greedy_tie"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "theorem2_feller_policy_existence_proof",
+  "assumptions": {
+    "X": "compact metric state space from Theorem 1",
+    "A": "arbitrary compact metric action space",
+    "kernel": "Borel probability kernel satisfying Assumption 1",
+    "G": "closed singleton zero measure",
+    "B": "arbitrary finite horizon"
+  },
+  "nodes": [
+    {"id": "polish_spaces", "rule": "compact_metric_implies_standard_borel_polish", "depends": [], "conclusion": "X and A are Polish standard Borel spaces"},
+    {"id": "goal_usc", "rule": "closed_set_indicator_is_upper_semicontinuous", "depends": [], "conclusion": "V_0=1_G is bounded USC and Borel"},
+    {"id": "kernel_weak_continuity", "rule": "feller_equivalent_weak_kernel_continuity", "depends": [], "conclusion": "convergent state-action pairs induce weakly convergent kernels"},
+    {"id": "q_usc", "rule": "portmanteau_bounded_usc_limsup", "depends": ["kernel_weak_continuity"], "conclusion": "USC V_(b-1) implies jointly USC Q_b"},
+    {"id": "maximum_attained", "rule": "usc_function_attains_max_on_compact_action", "depends": ["q_usc"], "conclusion": "argmax Q_b(x,.) is nonempty compact for every x"},
+    {"id": "value_usc", "rule": "upper_maximum_theorem_constant_compact_correspondence", "depends": ["q_usc", "maximum_attained"], "conclusion": "x maps to max_a Q_b(x,a) is USC"},
+    {"id": "bellman_usc", "rule": "maximum_of_two_usc_functions", "depends": ["goal_usc", "value_usc"], "conclusion": "V_b is bounded USC and therefore Borel"},
+    {"id": "argmax_borel_graph", "rule": "borel_equality_graph_with_compact_sections", "depends": ["q_usc", "value_usc", "maximum_attained"], "conclusion": "the argmax correspondence has Borel graph and nonempty compact sections"},
+    {"id": "borel_selector", "rule": "arsenin_kunugui_uniformization", "depends": ["polish_spaces", "argmax_borel_graph"], "conclusion": "there is a Borel action selector a_b^*(x)"},
+    {"id": "induction_closed", "rule": "finite_backward_usc_induction", "depends": ["goal_usc", "bellman_usc"], "conclusion": "all stages V_b are bounded USC and Borel"},
+    {"id": "stage_attainment", "rule": "selector_realizes_bellman_maximum", "depends": ["borel_selector", "maximum_attained"], "conclusion": "each selected action realizes the Bellman recursion"},
+    {"id": "optimal_markov_policy", "rule": "finite_horizon_dynamic_programming_verification", "depends": ["induction_closed", "stage_attainment"], "conclusion": "the deterministic Borel Markov selector sequence attains V_B^*"}
+  ],
+  "root": "optimal_markov_policy",
+  "feller_calibration": {
+    "state": "one unsolved state plus goal",
+    "action": "[0,1]",
+    "goal_probability": "p(a)=a",
+    "maximizer": "a=1"
+  }
+}

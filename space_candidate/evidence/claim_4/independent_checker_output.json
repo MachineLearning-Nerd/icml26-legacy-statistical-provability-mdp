@@ -1,0 +1,9 @@
+{
+  "engine": "z3",
+  "violating_one_step_assignment": "unsat",
+  "violating_recurrence_assignment": "unsat",
+  "tight_factor_two_witness": "sat",
+  "violation_when_uniform_error_omitted": "sat",
+  "same_violation_when_uniform_error_restored": "unsat",
+  "passed": true
+}

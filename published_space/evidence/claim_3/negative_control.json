@@ -1,0 +1,9 @@
+{
+  "name": "upper_bellman_recurrence_violated",
+  "horizon": 1,
+  "goal_probabilities": {"only_action": "2/3"},
+  "upper_base_goal": "1",
+  "upper_base_nongoal": "0",
+  "proposed_upper_at_x": "1/2",
+  "expected_failed_assumption": "U_1>=T U_0"
+}

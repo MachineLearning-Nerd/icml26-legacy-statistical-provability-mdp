@@ -1,0 +1,11 @@
+{
+  "case": "upper_bellman_recurrence_violated",
+  "T_U0_at_x": "2/3",
+  "proposed_U1_at_x": "1/2",
+  "upper_recurrence_holds": false,
+  "V1_at_x": "2/3",
+  "claimed_upper_bound_holds": false,
+  "failed_for_intended_reason": true,
+  "verified": false,
+  "verdict": "NEGATIVE_CONTROL_REJECTED"
+}

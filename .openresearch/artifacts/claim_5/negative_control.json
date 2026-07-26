@@ -1,0 +1,27 @@
+{
+  "name": "optimal_within_top_k_control",
+  "states": ["x0", "goal", "failure"],
+  "actions": ["a_opt", "a_bad", "a_bad_2"],
+  "goal_states": ["goal"],
+  "horizon": 1,
+  "initial_distribution": {"x0": "1"},
+  "transitions": {
+    "x0": {
+      "a_opt": {"goal": "1"},
+      "a_bad": {"failure": "1"},
+      "a_bad_2": {"failure": "1"}
+    }
+  },
+  "scores": {
+    "x0": {"a_opt": "1", "a_bad": "0", "a_bad_2": "0"}
+  },
+  "epsilon": "0",
+  "k": 2,
+  "tie_order": ["a_opt", "a_bad", "a_bad_2"],
+  "selected_action": "a_opt",
+  "margin": {
+    "C_delta": "1",
+    "beta": "1",
+    "small_t_upper_exclusive": "1"
+  }
+}

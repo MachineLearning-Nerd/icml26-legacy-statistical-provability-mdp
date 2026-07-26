@@ -1,0 +1,16 @@
+{
+  "case": "compact_action_nonfeller_unattained_supremum",
+  "other_assumptions": {
+    "state_compact": true,
+    "action_compact": true,
+    "goal_closed": true,
+    "valid_probability_kernel": true
+  },
+  "Feller_condition_holds": false,
+  "supremum": "1",
+  "maximizer_exists": false,
+  "maximizing_sequence": "a_n=1-1/n has p(a_n)->1",
+  "failed_for_intended_reason": true,
+  "verified": false,
+  "verdict": "NEGATIVE_CONTROL_REJECTED"
+}
