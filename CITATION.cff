@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "Legacy/source workspace for Why Agentic Theorem Prover Works: A Statistical Provability Theory of Mathematical Reasoning Models"
+type: software
+authors:
+  - family-names: Sonoda
+    given-names: Sho
+  - family-names: Akiyama
+    given-names: Shunta
+  - family-names: Uezato
+    given-names: Yuya
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-legacy-statistical-provability-mdp"
+url: "https://github.com/MachineLearning-Nerd/icml26-legacy-statistical-provability-mdp"
+abstract: "Legacy/source workspace preserving the implementation, evidence artifacts, and branch history for the associated ICML 2026 reproduction record."
+keywords:
+  - reproduction
+  - ICML 2026
+references:
+  - type: article
+    title: "Why Agentic Theorem Prover Works: A Statistical Provability Theory of Mathematical Reasoning Models"
+    authors:
+      - family-names: Sonoda
+        given-names: Sho
+      - family-names: Akiyama
+        given-names: Shunta
+      - family-names: Uezato
+        given-names: Yuya
+    identifiers:
+      - type: arxiv
+        value: "2602.10538"
+    url: "https://arxiv.org/abs/2602.10538"
+
